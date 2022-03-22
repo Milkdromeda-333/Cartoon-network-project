@@ -1,0 +1,338 @@
+
+/*UNIVERSAL STYLES----*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Fredoka+One&display=swap');
+
+:root {
+  --blue: deepskyblue;
+  --margin: 1rem;
+}
+
+html {
+  font-size: 20px;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Arimo', sans-serif;
+  width: 100%;
+
+}
+
+a {
+   text-decoration: none;
+   color: var(--blue);
+}
+ 
+p {
+  line-height: 1.5rem;
+}
+
+h2, h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+}
+
+.cartoon-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*----NAV--*/
+nav {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 10;
+}
+nav ul{
+  display: inline-flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  margin-bottom: .95rem;
+  margin-left: 6rem;
+}
+
+.logo-nav img {
+ float: left;
+ width: 6rem;;
+ position: absolute;
+ top: -15px;
+ object-fit: cover;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+}
+
+nav .logo-nav a {
+  padding: 0;
+}
+
+nav a:hover {
+  background-color: var(--blue);
+  
+}
+.pink a:hover {
+background-color: deeppink;
+}
+
+.white a:hover {
+  background-color: gold;
+  color: black;
+}
+
+/*----NOW SHOWING--*/
+
+.now-showing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: s;
+    align-items: center;
+    background-color: deeppink;
+    padding: 2rem;
+    height: 100vh;
+  }
+
+.now-showing img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+#ppgirls {
+  outline: 1px black solid;
+}
+
+.now-showing h1 {
+  font-family: 'Fredoka One', cursive;
+}
+
+.now-showing h1::before {
+  content: url('images/play-button.png');
+  margin-right: 1rem;
+}
+
+.now-showing-description {
+  max-width: 90%;
+   margin: 0 auto;
+}
+
+/*----SECTION 2-----*/
+.section-2 {
+  display: grid;
+  grid-template-areas: 'next subscribe subscribe';
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+}
+
+.up-next {
+  grid-area: next;
+  background-color: var(--blue);
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.up-next h2::before {
+  content: url('images/fast-forward-button.png');
+  margin-right: var(--margin);
+}
+
+.flapjack-img {
+  border-radius: 10px;
+  outline: 1px solid black;
+}
+
+.flapjack-png {
+  width: 100%;
+  position: relative;
+  top: 11%;
+}
+/*----SUBSCRIBE SECTION--*/
+.subscribe {
+  grid-area: subscribe;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sub-wrapper img {
+  height: 15rem;
+  margin-top: 1rem;
+}
+
+.subscribe p {
+  font-size: .9rem;
+  font-weight: bolder;
+  
+}
+
+.subscribe h3 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.subscribe [type=email] {
+  width: 25rem;
+  height: 2rem;
+  background-color: #fff;
+  border: none;
+  color: hotpink;
+  border-radius: 15px;
+  outline: 2px solid hotpink;
+  font-family: 'Arimo', sans-serif;
+}
+
+.subscribe [type=email]:focus {
+  border: none;
+  outline: 2px solid var(--blue);
+
+}
+
+.subscribe [type=email]:hover {
+  outline: 2px solid var(--blue);
+}
+
+.subscribe form {
+  margin-top: 2rem;
+}
+
+.subscribe [type=submit] {
+display: block;
+margin: 1rem auto 0;
+width: 12rem;
+height: 2rem;
+border-radius: 20px;
+text-transform: capitalize;
+background-color: var(--blue);
+border: none;
+font-family: 'Arimo', sans-serif;
+color: white;
+font-size: large;
+text-transform: uppercase;
+}
+
+.subscribe [type=submit]:hover {
+  background-color: hotpink;
+  color: black;
+  border: 2px solid hotpink;
+  color: white;
+}
+
+/*----GAMES SECTION*/
+.games {
+  text-align: center;
+  background: gold;
+  padding: 2rem;
+}
+
+#games {
+  scroll-margin-top: 2rem;
+}
+
+.games h2 {
+  margin:2rem;
+}
+
+.games h2::before {
+content: url('images/video-game.png');
+margin-right: var(--margin);
+
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.game-container img {
+  width: 19rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px;
+  outline: 1px  solid black;
+}
+
+.game-container span {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.game-container button {
+  background-color: deeppink;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.011rem;
+  border: none;
+}
+
+.game-container button:hover{
+  background-color: var(--blue);
+  color: white;
+}
+
+.game-container button:active {
+  background-color: black;
+  color: white;
+}
+
+.samurai-game button {
+  margin-top: 3.3rem;
+}
+
+/*----FOOTER--*/
+footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+}
+
+footer img {
+  /*width: 18rem;*/
+  height: 15rem;
+  object-fit: fill;
+}
+
+.cn-footer-charecters {
+  width: 27rem;
+  height: auto;
+}
+
+footer .footer-info {
+  line-height: 1.4rem;
+  font-size: .85rem;
+}
+
+.footer-info li {
+  list-style: none;
+  color: white;
+}
+
+.footer-info a {
+  color: white;
+}
+
+.footer-info a:hover {
+  color: deeppink;
+}
+
+footer span {
+  display: block;
+  color: dimgrey;
+  font-size: .7rem;
+
+}
+
+footer span:first-of-type {
+  margin-top: 1rem;
+}
