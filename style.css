@@ -112,7 +112,7 @@ background-color: deeppink;
 }
 
 .now-showing h1::before {
-  content: url('images/play-button.png');
+  content: url('play-button.png');
   margin-right: 1rem;
 }
 
@@ -137,7 +137,7 @@ background-color: deeppink;
 }
 
 .up-next h2::before {
-  content: url('images/fast-forward-button.png');
+  content: url('fast-forward-button.png');
   margin-right: var(--margin);
 }
 
@@ -240,7 +240,7 @@ text-transform: uppercase;
 }
 
 .games h2::before {
-content: url('images/video-game.png');
+content: url('video-game.png');
 margin-right: var(--margin);
 
 }
